@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mobile App</title>
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"
+        ><div class="logo-wrapper">
+          <img src="images/logo.png" class="img-fluid logo" alt="logo" />
+        </div>
+        TASHUKERU</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><button
+                type="button"
+                class="btn cart-btn"
+                data-toggle="modal"
+                data-target="#cart"
+              >
+                <img
+                  src="images/cart.png"
+                  class="img-fluid mr-2"
+                  height="20"
+                  width="20"
+                  alt="cart"
+                />
+                <span class="total-count"></span></button
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- slider -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-img-wrapper my-center" id="ciw1">
+            <header>
+              <h1>Groceries</h1>
+              <p>Get all type of groceries for your daily life</p>
+              <a href="menu.html">Start Shopping</a>
+            </header>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper my-center" id="ciw2">
+            <header>
+              <h1>Fruits</h1>
+              <p>Verity of fruits for your healthy life</p>
+              <a href="menu.html">Start Shopping</a>
+            </header>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper my-center" id="ciw3">
+            <header>
+              <h1>Vegitables</h1>
+              <p>All type of vegitables at a profitable rate</p>
+              <a href="menu.html">Start Shopping</a>
+            </header>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper my-center" id="ciw4">
+            <header>
+              <h1>Medicines</h1>
+              <p>Delivery of all type of medicines to your home</p>
+              <a href="menu.html">Start Shopping</a>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+    <section class="container-fluid menu">
+      <div class="row">
+        <div class="col-6 col-md-2">
+          <a href="menu.html#fitem-grocery">
+            <div class="my-card">
+              <figure>
+                <img
+                  src="images/catagory.jpg"
+                  class="img-fluid"
+                  alt="catagories"
+                />
+              </figure>
+              <h4>Groceries</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="menu.html#fitem-prasad">
+            <div class="my-card">
+              <figure>
+                <img
+                  src="images/catagory.jpg"
+                  class="img-fluid"
+                  alt="catagories"
+                />
+              </figure>
+              <h4>Prasad</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="menu.html#fitem-vegitable">
+            <div class="my-card">
+              <figure>
+                <img
+                  src="images/catagory.jpg"
+                  class="img-fluid"
+                  alt="catagories"
+                />
+              </figure>
+              <h4>Vegitables</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="menu.html#fitem-nonveg">
+            <div class="my-card">
+              <figure>
+                <img
+                  src="images/catagory.jpg"
+                  class="img-fluid"
+                  alt="catagories"
+                />
+              </figure>
+              <h4>Non-veg</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="menu.html#backery">
+            <div class="my-card">
+              <figure>
+                <img
+                  src="images/catagory.jpg"
+                  class="img-fluid"
+                  alt="catagories"
+                />
+              </figure>
+              <h4>Bakkery</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="menu.html#fitem-medicine">
+            <div class="my-card">
+              <figure>
+                <img
+                  src="images/catagory.jpg"
+                  class="img-fluid"
+                  alt="catagories"
+                />
+              </figure>
+              <h4>Medicine</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="container-fluid">
+      <div class="row gy-4">
+        <div class="col-md-3 my-center order-3 order-md-1">
+          <div class="text-center">
+            <figure class="my-center">
+              <img src="images/logo.png" alt="logo" />
+            </figure>
+            <p>2020 All copyrights reserved to Tashukeru</p>
+          </div>
+        </div>
+        <div class="col-md-5 order-1 order-md-2">
+          <h4>Write to us</h4>
+          <form
+            action="mailto:sibasantosh.cuttack@badabusiness.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-group">
+              <label>Full Name</label>
+              <input
+                type="text"
+                name="Full Name"
+                class="form-control"
+                placeholder="Your Full Name"
+              />
+            </div>
+
+            <div class="form-group mt-2">
+              <label for="exampleFormControlTextarea1"
+                >Write Your Message</label
+              >
+              <textarea
+                class="form-control"
+                name="Message"
+                placeholder="Your Message"
+                rows="3"
+              ></textarea>
+            </div>
+            <input type="submit" value="Send" class="btn btn-light mt-2 px-5" />
+          </form>
+        </div>
+        <div class="col-md-4 order-2 order-md-3">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fas fa-phone-alt mr-2"></i>
+              <a href="tel:9777111809">+91-9777111809</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope mr-2"></i
+              ><a href="mailto:ashutoshbisoyi205@gmail.com"
+                >ashutoshbisoyi205@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-map mr-2"></i>
+              <a href="#">Niladri Bihar, Bhubaneswar-761060</a>
+            </li>
+          </ul>
+          <h4>Connect with Us</h4>
+          <ul class="social-ul">
+            <li>
+              <a href="#"
+                ><img src="images/facebook.png" alt="facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/instagram.png" alt="instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/phone.png" alt="phone.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/whatsapp.png" alt="whatsapp" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="developer">
+      <p>This website is developed by <a href="#">HonourCreators</a></p>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title" id="exampleModalLabel">Cart</p>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5>Total Price:</h5>
+              <div class="d-flex">
+                <h5 class="mr-1">₹</h5>
+                <h5 class="total-cart"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="checkout.html">
+              <button type="button" class="btn order-now">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

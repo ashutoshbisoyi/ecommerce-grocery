@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+button:focus {
+  outline: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+section {
+  padding: 1.5em 0;
+}
+.my-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*______________ header _______________*/
+.navbar {
+  background-color: #165ed7 !important;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  color: #fff !important;
+  font-size: 1.2em;
+}
+.navbar a {
+  color: #fff !important;
+}
+.navbar .navbar-brand {
+  position: relative;
+}
+.nav-item.active {
+  border-bottom: 2px solid #fff600;
+}
+.navbar .logo-wrapper {
+  background-color: #fff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.cart-btn {
+  background-color: #fff600;
+}
+/*______________ carousel _______________*/
+.carousel-img-wrapper,
+.banner-wrapper {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-color: antiquewhite;
+  background-size: cover;
+  background-position: center;
+  align-items: flex-end;
+}
+.carousel-img-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(22, 94, 215, 0.2),
+    rgba(22, 94, 215, 0.2)
+  );
+  opacity: 0.9;
+}
+#ciw1 {
+  background-image: url('images/sliderimg1.jpg');
+}
+#ciw2 {
+  background-image: url('images/sliderimg2.jpg');
+}
+#ciw3 {
+  background-image: url('images/sliderimg3.jpg');
+}
+#ciw4 {
+  background-image: url('images/sliderimg4.jpg');
+}
+.banner-wrapper {
+  background-position: center;
+}
+#menu-banner {
+  background-image: url('images/menu-img.jpg');
+}
+#checkout-banner {
+  background-image: url('images/cheackout-img.jpg');
+}
+.carousel-img-wrapper header,
+.banner-wrapper header {
+  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: #fff;
+  text-align: center;
+  padding: 1em 3em;
+  width: 100%;
+  z-index: 10;
+}
+.banner-wrapper header {
+  font-size: 0.8em;
+}
+.carousel-img-wrapper header h1,
+.banner-wrapper header h1 {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid #fff600;
+}
+.carousel-img-wrapper header p,
+.banner-wrapper header p {
+  text-transform: uppercase;
+}
+.carousel-img-wrapper header a,
+.banner-wrapper header a {
+  font-size: 1.3em;
+  padding: 0.3em 2em;
+  background-color: #fff600;
+  color: #333333;
+}
+/*______________ menu _______________*/
+.my-card {
+  width: 100%;
+  background: linear-gradient(145deg, #dcdcdc, #ffffff);
+  box-shadow: 20px 20px 60px #cfcfcf, -20px -20px 60px #ffffff;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.my-card,
+.my-card h4,
+.my-card img {
+  border-radius: 17px;
+}
+.my-card h4 {
+  font-size: 1em;
+  background-color: #165ed7;
+  color: #ececec;
+  padding: 0.5em;
+  margin: 1em 0 0 0;
+}
+.menu .col-6 {
+  padding: 10px !important;
+}
+.menu figure {
+  margin: 0;
+}
+/* filter */
+.filter-container .button-group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1em 0.5em;
+  background-color: #f4f4f4;
+}
+.filter-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.filter-container .our-gallery {
+  transition: all 0.5s ease;
+}
+.button-group button {
+  height: max-content;
+  padding: 0.5em 1.5em;
+  border: 1px solid #165ed7;
+  background: transparent;
+  margin-right: 1em;
+  border-radius: 50px;
+}
+.button-group .active {
+  background-color: #165ed7;
+  color: #fff;
+}
+.filter-container .col-4 {
+  padding: 0 8px;
+}
+.filter-container p {
+  background-color: #f1f1f1;
+  color: #165ed7;
+  margin-top: 0.2em;
+  padding: 0.2em;
+  border-radius: 3px;
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+.filter-card {
+  position: relative;
+}
+.price-tag {
+  position: absolute;
+  background-color: green;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0.1em 0.2em;
+}
+.add-to-cart {
+  width: 100% !important;
+  background-color: #165ed7 !important;
+  color: #fff !important;
+  margin-bottom: 1em;
+}
+.add-to-cart:focus {
+  box-shadow: none;
+}
+.add-to-cart:active {
+  background-color: green !important;
+  box-shadow: none;
+}
+.modal {
+  z-index: 9999999999999;
+}
+.order-now {
+  background-color: #165ed7;
+  color: #fff;
+}
+/*----------------- footer ----------------*/
+footer {
+  background-color: #333333;
+  color: #ececee;
+  padding: 50px 0;
+  position: relative;
+}
+footer figure {
+  width: 80%;
+  position: relative;
+  margin-bottom: 0.5em;
+  margin: auto;
+}
+footer figure img {
+  width: 60%;
+  margin: auto;
+}
+footer h4 {
+  border-bottom: 3px solid #fff600;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  list-style-position: outside;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+footer .social-ul li {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+.developer {
+  background: #165ed7;
+  color: #ececee;
+  padding: 0.3em 1em;
+  font-size: 1.1em;
+}
+.developer p {
+  margin: 0;
+}
+/*------------------ form page ------------------*/
+.form-section {
+  padding: 50px 150px;
+}
+.form-section h2 {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid #165ed7;
+}
+.form-section form {
+  padding-top: 2em;
+}
+.form-btn {
+  background-color: #165ed7;
+  color: #fff;
+}
+.about-us-section h2 {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #165ed7;
+}
+.about-us-section p {
+  font-size: 1.1em;
+}
+.social-media ul {
+  display: flex;
+}
+.social-media ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.5em;
+  height: 45px;
+  width: 45px;
+  background-color: #165ed7;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media a {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .carousel-img-wrapper header,
+  .banner-wrapper header {
+    padding: 1em 1.2em;
+  }
+  .menu-logo,
+  .menu-cart-btn {
+    display: none;
+  }
+  .banner-wrapper {
+    background-position: left;
+  }
+  .button-group button {
+    padding: 0.3em 1em;
+  }
+  .filter-container p {
+    font-size: 1.1em;
+  }
+  .form-section {
+    padding: 50px 15px;
+  }
+  .form-section h2 {
+    font-size: 1.5em;
+  }
+  footer h4 {
+    margin-top: 1em;
+  }
+}
